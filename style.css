@@ -1,0 +1,89 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+    margin-top: 20px;
+}
+
+.realtime-view {
+    margin-bottom: 20px;
+}
+
+#camera-feed {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#map {
+    background-color: #ddd;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.data-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.data-list li {
+    margin-bottom: 8px;
+}
+
+.data-list strong {
+    font-weight: bold;
+    color: #333;
+}
+
+#emergency-abort {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#emergency-abort:hover {
+    background-color: #e00000;
+}

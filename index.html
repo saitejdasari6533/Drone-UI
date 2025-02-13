@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Control Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GNSS Device / Ardupilot</h1>
+
+        <div class="realtime-view">
+            <h2>Realtime Camera View</h2>
+            <div id="camera-feed">
+                <!--   <img src="placeholder-camera.jpg" alt="Camera Feed" width="400" height="300"> -->
+                <video width="600" height="300" controls>
+                    <source src="video.mp4.mp4" type="video/mp4">
+                    <source src="video.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                  </video>
+                  
+            </div>
+        </div>
+
+        <div class="location-container">
+            <h2>Location of Drone</h2>
+            <div class="location-display">
+                <div id="map">
+                    <!-- Placeholder for Map -->
+                    <img src="placeholder-map.png" alt="Map" width="200" height="150">
+                </div>
+                <ul class="data-list">
+                    <li><strong>Altitude:</strong> <span id="altitude">0 m</span></li>
+                    <li><strong>Cubesat Health Status:</strong> <span id="cubesat-health">Good</span></li>
+                    <li><strong>Obstacle Detection:</strong> <span id="obstacle-detection">None</span></li>
+                    <li><strong>Battery:</strong> <span id="battery">100%</span></li>
+                    <li><strong>Thrust to Weight Ratio:</strong> <span id="thrust-weight">4:6 Propellers</span></li>
+                    <li><strong>Connection Status:</strong> <span id="connection">Connected</span></li>
+                    <li><strong>Message Logging:</strong> <span id="message-logging">Active</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <button id="emergency-abort">Emergency Abort</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
